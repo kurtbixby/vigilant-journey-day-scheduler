@@ -1,0 +1,18 @@
+.save-block {
+    background-color: cornflowerblue;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.task-area {
+    background-color: lightgrey;
+}
+
+.time-block {
+    text-align: right;
+    border-style: dashed;
+    border-left-style: none;
+    border-width: 2px;
+
+    font-size: large;
+}
