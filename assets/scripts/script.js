@@ -3,6 +3,7 @@ const START_HOUR = 9;
 const END_HOUR = 17;
 
 const mainElement = $('#schedule-section');
+const timerTextEl = $('header h2 span');
 
 const ROW_CLASS = 'schedule-row'
 const TIME_CLASS = 'time-block';
@@ -26,6 +27,13 @@ const STORAGE_KEY_PREFIX = 'saved-task-';
 function init() {
     createScheduleSection();
     mainElement.on('click', '.save-block', saveTaskHandler);
+    updateClock();
+    setInterval(updateClock, 1000);
+}
+
+function updateClock() {
+    let timeString = moment().format('hh:mm:ss A');
+    timerTextEl.text(timeString);
 }
 
 function createScheduleSection() {
