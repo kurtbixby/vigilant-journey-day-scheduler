@@ -16,3 +16,19 @@
 
     font-size: large;
 }
+
+.past-hour {
+    background-color: lightgrey;   
+}
+
+.present-hour {
+    background-color: red;
+}
+
+.future-hour {
+    background-color: green;
+}
+
+.save-block:hover {
+    cursor: pointer;
+}
