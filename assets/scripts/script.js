@@ -62,7 +62,7 @@ function createHourRow() {
     let hourElement = $('<div>').addClass('col-2 col-md-1 time-block');
     let taskArea = $('<div>').addClass('col-8 col-md-10 task-area').attr('contenteditable', 'true');
     let saveElement = $('<div>').addClass('col-2 col-md-1 save-block d-flex justify-content-center');
-    let saveIcon = $('<img>').attr('src', './assets/images/save_icon.png');
+    let saveIcon = $('<img>').attr('src', './assets/images/save-icon.png');
     saveElement.append(saveIcon);
 
     rowElement.append(hourElement,
