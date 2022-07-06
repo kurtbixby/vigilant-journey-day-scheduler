@@ -5,7 +5,7 @@ const END_HOUR = 17;
 const mainElement = $('#schedule-section');
 const timerTextEl = $('header h2 span');
 
-const ROW_CLASS = 'schedule-row'
+const ROW_CLASS = 'schedule-row';
 const TIME_CLASS = 'time-block';
 const TASK_CLASS = 'task-area';
 const SAVE_CLASS = 'save-block';
@@ -13,9 +13,9 @@ const ROW_ID_BASE = 'hour-row-';
 
 const DATA_HOUR_STR = 'hour';
 
-const PAST_CLASS = 'past-hour'
-const PRESENT_CLASS = 'present-hour'
-const FUTURE_CLASS = 'future-hour'
+const PAST_CLASS = 'past-hour';
+const PRESENT_CLASS = 'present-hour';
+const FUTURE_CLASS = 'future-hour';
 
 const PAST_HOUR_COLOR = 'lightgrey';
 const CURRENT_HOUR_COLOR = 'red';

@@ -1,34 +1,75 @@
+/* Styling for the overall fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Styling for the save icons */
+img {
+    object-fit: contain;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Adds the black divider below the jumbotron */
+.jumbotron {
+    border-bottom: 3px solid black;
+}
+
+/* Styling for the row container */
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+}
+
+/* Styling for the hour section starting each row */
+.time-block {
+    text-align: right;
+    border-style: dashed;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-width: 2px;
+
+    font-size: large;
+}
+
+/* Styling for the task text area */
+.task-area {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+/* Styling for the save block */
 .save-block {
     background-color: cornflowerblue;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
-.task-area {
-    background-color: lightgrey;
-}
-
-.time-block {
-    text-align: right;
-    border-style: dashed;
-    border-left-style: none;
-    border-width: 2px;
-
-    font-size: large;
-}
-
+/* Sections to color the hour text areas */
 .past-hour {
-    background-color: lightgrey;   
+    background-color: #d3d3d3;   
 }
 
 .present-hour {
-    background-color: red;
+    background-color: #ff6961;
 }
 
 .future-hour {
-    background-color: green;
+    background-color: #77dd77;
 }
 
+/* Sections to show the interactivity of the save buttons */
 .save-block:hover {
     cursor: pointer;
+}
+
+.save-block:hover img {
+    transform: scale(1.08);
+    transition: all 0.2s ease-in-out;
 }
